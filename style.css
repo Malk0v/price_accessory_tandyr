@@ -362,6 +362,10 @@ body.open .menu a {
   }
 
   .logo-mob {
+    margin-left: 55px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #783adc69;
     display: inline-flex;
     font-size: 20px;
     color: black;
