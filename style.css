@@ -43,6 +43,12 @@ img {
   position: relative;
 }
 
+h1 {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+}
+
 .accessory {
   display: flex;
   flex-wrap: wrap;
@@ -91,6 +97,12 @@ img {
   transition: 0.3s ease-in-out;
 }
 
+.header h1 {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+}
+
 .logo {
   color: #44285e;
   font-family: "Playfair Display", serif;
@@ -123,22 +135,16 @@ nav ul {
 .topmenu {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 5px;
 }
 
 .topmenu > li {
-  width: 15%;
-  float: left;
   position: relative;
   font-family: "Open Sans", sans-serif;
 }
 .topmenu > li > a {
-  text-transform: uppercase;
-  font-size: 18px;
+  font-size: 15px;
   color: #404040;
-  padding: 5px 30px;
+  padding: 2px 17px;
 }
 
 .topmenu li a:hover {
@@ -151,6 +157,7 @@ nav ul {
   color: inherit;
   margin-left: 10px;
 }
+
 .submenu {
   background: #302737;
   position: absolute;
@@ -382,7 +389,13 @@ body.open .menu a {
 
 @media screen and (min-width: 433px) and (max-width: 768px) {
   .logo {
-    font-size: 2em;
+    font-size: 1em;
+  }
+
+  .header h1 {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 100;
   }
 
   .topmenu {
@@ -390,15 +403,19 @@ body.open .menu a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 5px;
+    padding: 2px;
+    font-size: 15px;
   }
 
-  .topmenu > li {
-    width: 5px;
+  .topmenu li {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 15px;
   }
+
   .topmenu > li > a {
-    font-size: 10px;
     color: #404040;
+    font-size: 15px;
   }
 
   .topmenu li a:hover {
