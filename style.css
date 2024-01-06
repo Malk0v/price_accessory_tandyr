@@ -354,7 +354,7 @@ body.open .menu a {
 
   .logo-mob {
     display: inline-flex;
-    font-size: 19px;
+    font-size: 20px;
     color: black;
     text-decoration: none;
     align-items: center;
@@ -372,7 +372,7 @@ body.open .menu a {
   }
 
   .accessory {
-    margin-top: 70px;
+    margin-top: 120px;
   }
 }
 
