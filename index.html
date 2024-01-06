@@ -3,17 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Price</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>
         Ціни на аксесуари до тандиру для оптових покупців І квартал 2024рік
       </h1>
+      <nav>
+        <ul class="topmenu">
+          <li>
+            <a href="" class="submenu-link">О нас 🚀</a>
+            <ul class="submenu">
+              <li><a href="">На ринку</a></li>
+              <li><a href="">з</a></li>
+              <li><a href="">2015 року</a></li>
+            </ul>
+          </li>
+          <li><a href="#cruk">Крюк</a></li>
+          <li><a href="#in">Насадки</a></li>
+          <li><a href="#4v1">4в1</a></li>
+          <li><a href="#st">Сітки</a></li>
+          <li><a href="#chohol">Чохол</a></li>
+        </ul>
+      </nav>
     </header>
 
+    <!-- aside -->
     <section>
-      <div>
+      <nav class="top-nav">
+        <button class="navbar-burger" onclick="toggleMenu()">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M12 26h20v4h-20zM12 14h20v4h-20zM12 2h20v4h-20zM6 0v8h-2v-6h-2v-2zM4 16.438v1.563h4v2h-6v-4.563l4-1.875v-1.563h-4v-2h6v4.563zM8 22v10h-6v-2h4v-2h-4v-2h4v-2h-4v-2z"
+            ></path>
+          </svg>
+        </button>
+
+        <div class="menu">
+          <button class="btn" onclick="toggleMenu()">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+            >
+              <title>close</title>
+              <path
+                fill="#afb1b8"
+                d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"
+              ></path>
+            </svg>
+          </button>
+
+          <nav>
+            <a href="#cruk" style="animation-delay: 0.2s"> 👓 Крюк</a>
+            <a href="#in" style="animation-delay: 0.4s"> 👕 Насадки</a>
+            <a href="#4v1" style="animation-delay: 0.5s"> 👖 4в1</a>
+            <a href="#st" style="animation-delay: 0.6s"> 🥾 Сітки </a>
+            <a href="#chohol" style="animation-delay: 0.7s"> 🧶 Чохол</a>
+          </nav>
+        </div>
+
+        <a class="logo-mob" href="https://www.instagram.com/tandoor_accessory?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"> <img src="./img/barbecue-logo.jpeg" alt="logo" width="50px"></a>
+      </nav>
+    </section>
+
+    <div class="accessory">
+      <section>
+      <div id="cruk">
         <h2>Крюк</h2>
         <img src="./img/cru.jpg" loading="lazy" alt="крюк" width="300px" />
         <p>
@@ -22,8 +88,8 @@
           Тройний 300грн
         </p>
       </div>
-
-      <div>
+<!-- конус -->
+      <div id="in">
         <h2>Конус</h2>
         <img
           src="./img/con.jpg"
@@ -33,7 +99,7 @@
         />
         <p>100грн <br /></p>
       </div>
-
+<!-- птица -->
       <div>
         <h2>Насадка 'Під птицю'</h2>
         <img src="./img/ptich.jpg" loading="lazy" alt="Птиця" width="300px" />
@@ -49,7 +115,7 @@
           Птиця + сковорідка 40см 2050 грн <br />
         </p>
       </div>
-
+<!-- елка -->
       <div>
         <h2>Насадка 'Ялинка'</h2>
         <img src="./img/el.jpg" loading="lazy" alt="ялинка" width="300px" />
@@ -65,7 +131,7 @@
           Ялинка + сковорідка 40см 2050 грн <br />
         </p>
       </div>
-
+<!-- шампур -->
       <div>
         <h2>Насадка 'Шампурниця'</h2>
         <img
@@ -86,8 +152,8 @@
           Шампурниця + сковорідка 40см 2150 грн <br />
         </p>
       </div>
-
-      <div>
+<!-- 4в1 -->
+      <div id="4v1">
         <h2>набір 4в1</h2>
         <img src="./img/4in1.jpg" loading="lazy" alt="4v1" width="300px" />
         <p>
@@ -101,8 +167,8 @@
           40 см 1900 грн <br />
         </p>
       </div>
-
-      <div>
+<!-- ст2х -->
+      <div id="st">
         <h2>Сітка 2х рівнева</h2>
         <img
           src="./img/2x.jpg"
@@ -121,7 +187,7 @@
           Сітка 40см 1000 грн <br />
         </p>
       </div>
-
+<!-- ст3х -->
       <div>
         <h2>Сітка 3х рівнева</h2>
         <img
@@ -141,7 +207,7 @@
           Сітка 40см 1500 грн <br />
         </p>
       </div>
-
+<!-- ст2х1 -->
       <div>
         <h2>Сітка 2х під сковорідку № 1</h2>
         <img src="./img/s2xi.jpg" loading="lazy" alt="Сітка" width="300px" />
@@ -156,7 +222,7 @@
           Сітка + сковорідка 40см 2900 грн <br />
         </p>
       </div>
-
+<!-- ст3х1 -->
       <div>
         <h2>Сітка 3x під сковорідку № 1</h2>
         <img src="./img/s3xi.jpg" loading="lazy" alt="Сітка" width="300px" />
@@ -171,7 +237,7 @@
           Сітка + сковорідка 40см 3000 грн <br />
         </p>
       </div>
-
+<!-- ст2х3 -->
       <div>
         <h2>Сітка 2х під сковорідку № 3</h2>
         <img src="./img/s2xiii.jpg" loading="lazy" alt="Сітка" width="300px" />
@@ -186,7 +252,7 @@
           Сітка + сковорідка 40см 3200 грн <br />
         </p>
       </div>
-
+<!-- ст3ч3 -->
       <div>
         <h2>Сітка 3x під сковорідку № 3</h2>
         <img src="./img/s3xiii.jpg" loading="lazy" alt="Сітка" width="300px" />
@@ -201,7 +267,7 @@
           Сітка + сковорідка 40см 3600 грн <br />
         </p>
       </div>
-
+<!-- ск -->
       <div>
         <h2>
           Сковорідка чугунна <br />
@@ -224,8 +290,8 @@
           40 см 1600 грн <br />
         </p>
       </div>
-
-      <div>
+<!-- чехол -->
+      <div id="chohol">
         <h2>Чохол на тандир</h2>
         <img
           src="./img/chohol.JPG"
@@ -239,34 +305,38 @@
         </p>
       </div>
     </section>
+    </div>
+
+        <!-- footer -->
+    <footer class="footer">
+      <div class="footer-2">
+        <!-- лого,адресс,почта,телефон -->
+        <address>
+          <div class="foot-logo">
+            <a href="https://www.instagram.com/tandoor_accessory?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"> <img src="./img/barbecue-logo.jpeg" alt="logo" width="50px"></a>
+              <span class="word-web">наш інстаграмм</span></a
+            >
+          </div>
+          <ul>
+            <li class="foot-item">
+              <a href="https://goo.gl/maps/RxfCTYUpQu2i5JpL6" class="maps">
+                г.Изюм</a
+              >
+            </li>
+            </li>
+            <li class="foot-item">
+              <a class="word-web" href="tel:+38 073 07770 92" class="foot-aut"
+                >+38 073 07770 92</a
+              >
+            </li>
+          </ul>
+        </address>
+          </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
   </body>
-
-  <style>
-    body {
-      background-color: rgb(255, 255, 255);
-    }
-
-    section {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    div {
-      outline: 1px solid black;
-      border-radius: 20px;
-      padding: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      margin: 10px;
-    }
-
-    p {
-      font-family: "Times New Roman", Times, serif;
-      letter-spacing: 0.5px;
-      line-height: 25px;
-    }
-
-    img {
-      border-radius: 20px;
-    }
-  </style>
 </html>
