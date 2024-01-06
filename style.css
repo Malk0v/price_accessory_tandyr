@@ -26,7 +26,6 @@ section {
 
 div {
   border-radius: 20px;
-  padding: 20px;
   margin-left: auto;
   margin-right: auto;
   margin: 10px;
@@ -123,7 +122,7 @@ nav ul {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 5px;
 }
 
@@ -143,6 +142,7 @@ nav ul {
 .topmenu li a:hover {
   color: #507dcb;
 }
+
 .submenu-link:after {
   content: "";
   font-family: "FontAwesome";
@@ -165,7 +165,7 @@ nav ul {
 .submenu a {
   color: white;
   text-align: left;
-  margin: 35px;
+  margin: 30px;
   padding: 0px 15px;
   font-size: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -353,9 +353,15 @@ body.open .menu a {
   }
 
   .logo-mob {
-    display: inline-block;
-    font-size: 40px;
-    margin: 0 0 10px 300px;
+    display: inline-flex;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+  }
+
+  .logo-mob img {
+    margin: 10px;
   }
 
   .top-nav {
@@ -365,41 +371,36 @@ body.open .menu a {
     justify-content: space-between;
   }
 
-  /* ==========tablet========== */
+  .accessory {
+    margin-top: 70px;
+  }
+}
 
-  @media screen and (min-width: 433px) and (max-width: 768px) {
-    body {
-      background-color: #dee2e7cf;
-      /* max-width: 800px; */
-    }
+/* ==========tablet========== */
 
-    .header {
-      width: 100%;
-      padding: 0;
-    }
+@media screen and (min-width: 433px) and (max-width: 768px) {
+  .logo {
+    font-size: 2em;
+  }
 
-    .logo {
-      font-size: 2em;
-    }
+  .topmenu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+  }
 
-    .hero {
-      margin-top: 70px;
-    }
+  .topmenu > li {
+    width: 5px;
+  }
+  .topmenu > li > a {
+    font-size: 10px;
+    color: #404040;
+  }
 
-    .topmenu > a {
-      width: 100px;
-      float: left;
-      position: relative;
-      font-family: "Open Sans", sans-serif;
-    }
-    .topmenu > li > a {
-      font-size: 10px;
-      padding: 1%;
-    }
-
-    .form-group {
-      width: 70%;
-    }
+  .topmenu li a:hover {
+    color: #507dcb;
   }
   /* ================================================= */
 
