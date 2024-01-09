@@ -448,13 +448,12 @@ body.open .menu a {
   }
 
   .logo-mob {
-    width: 85%;
-    margin-left: auto;
+    display: flex;
+    justify-content: end;
+
+    margin-left: 50px;
     padding: 1px;
     border-radius: 10px;
-    background-color: #783adc69;
-    text-align: center;
-    display: inline-block;
     font-size: 20px;
     color: black;
     text-decoration: none;
